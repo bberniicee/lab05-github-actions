@@ -1,8 +1,6 @@
 services:
   nginxwebsvr:
-    image: nginx:alpine
+    build: .
     container_name: nginxwebsvr
     ports:
       - "80:80"
-    volumes:
-      - .:/usr/share/nginx/html
